@@ -45,10 +45,27 @@ import body5 from './bd5.jpg'
 import about from './abt.png'
 import vdo from './vdo1.mp4'
 import profile from './pr.png'
+import Facial from './facial.jpg'
+// import Makeup from './flales mk.jpg'
+import Shade from './founshade.jpg'
+import Trim from './hairtrim.jpg'
+import Hairhealth from './healthhair.jpg'
+import Beautyproduct from './beautyprd.jpg'
+import Nalook from './naturallook.jpg'
+import Winter from './winter.jpg'
+import Wrinkle from './wrinkle.jpg'
 export const asset = {
   hair,
   Hair1,
   vdo,
+  Facial,
+  Shade,
+  Trim,
+  Hairhealth,
+  Beautyproduct,
+  Nalook,
+  Winter,
+  Wrinkle,
   profile,
   image1,
   image2,
