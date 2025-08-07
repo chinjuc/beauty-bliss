@@ -14,7 +14,7 @@ body {
 }
 
 .image {
-    background-image: url(../src/assets/spa1.jpg);
+    background-image: url(../assets/spa1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@ body {
 
 @media (max-width: 568px) {
     .image {
-        background-image: url(../src/assets/spa3.jpg);
+        background-image: url(../assets/spa3.jpg);
         height: 100vh;
         width: 100%;
         padding-left: 0;
