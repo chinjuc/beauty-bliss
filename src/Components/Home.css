@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&family=WDXL+Lubrifont+TC&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    /* background-color: #deb08ed5; */
+    background-color: #d2aa89f8 !important;
+    margin-top: 0px;
+
+}
+
+@media(max-width:728px) {
+    body {
+        width: auto;
+    }
+}
+
+.image {
+    background-image: url(../src/assets/spa1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0px !important;
+}
+
+.navigate {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navigate .nav-link {
+    color: rgb(80, 14, 14);
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.navigate Link {
+    color: rgb(80, 14, 14);
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.beauty {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(86, 10, 10);
+}
+
+.line {
+    width: 400px;
+    height: 2px;
+    background-color: rgb(77, 7, 7);
+    /* float: right; */
+    /* margin-right: 135px; */
+}
+
+.nature-spell {
+    float: right;
+    font-family: 'Josefin Sans', sans-serif;
+    /* margin-left: 700px;
+    margin-right: 80px; */
+}
+
+.nature-spell h1 {
+    text-transform: capitalize;
+    margin-top: 180px;
+    margin-right: 40px;
+    font-size: 44px;
+    color: white;
+}
+
+.icons img {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.icons {
+    float: right;
+    /* margin-top: 330px;
+  margin-left: 1100px; */
+}
+
+.icon-btn {
+    display: block;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(69, 6, 6);
+    letter-spacing: 4px;
+    width: 190px;
+    height: 40px;
+    padding: 1px;
+    text-align: center;
+    margin: 40px;
+    margin-right: 120px;
+    border-radius: 20px;
+    font-family: 'Winky Sans', sans-serif;
+    text-transform: capitalize;
+}
+.icon-btn:hover{
+    background-color: rgb(155, 131, 99);
+    transform: scaleX(1.1);
+    transition: 2s all ease-in;
+}
+
+.nature-spell span {
+    color: rgb(76, 9, 9);
+    font-size: 56px;
+    /* text-decoration: underline; */
+}
+
+@media (max-width: 568px) {
+    .image {
+        background-image: url(../src/assets/spa3.jpg);
+        height: 100vh;
+        width: 100%;
+        padding-left: 0;
+        margin-top: 0px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .nature-spell {
+        margin-top: 130px;
+        float: right;
+        margin-right: 0px;
+        margin-left: 135px !important;
+    }
+
+    .icon-btn {
+        margin: 0px;
+    }
+
+    .nature-spell h1 {
+        text-transform: capitalize;
+        margin-top: 230px;
+        position: sticky;
+        top: 0px;
+        font-size: 34px;
+        color: white;
+    }
+    .nature-spell span{
+        font-size: 40px;
+    }
+
+}
