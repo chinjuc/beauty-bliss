@@ -33,14 +33,22 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 460px;
   justify-content: space-around;
 }
 
 @media (max-width:528px){
   .service-cards-container{
     width: 0px;
-    margin-left: 20px;
+    margin: 0px;
+    margin-left: -10px;
+  }
+  .service-card{
+    width: auto;
+    padding: 10px;
+  }
+  .service-title{
+    font-size: 24px;
   }
 }
 
@@ -64,7 +72,7 @@
 }
 
 .service-card-title {
-  font-size: 1.3rem;
+  font-size: 22px;
   font-weight: 600;
   color: #100d0d;
   margin-bottom: 10px;
@@ -167,8 +175,8 @@
     width: 300px;
     height: auto;
     position: absolute;
-    top: 65px;
-    right: 10px;
+    top: 95px;
+    left: 10px;
     z-index: 1;
 }
 

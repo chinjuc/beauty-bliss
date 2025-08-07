@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import Aos from 'aos';
 import './ServiceList.css'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import { asset } from '../assets/asset';
 
 
@@ -48,7 +51,7 @@ const lists = [
             },
             {
                 title: "Hair Smoothning",
-                // img: asset.Hairsmooth,
+                img: asset.Hair1,
                 text: "A chemical process that relaxes hair strands, making them smooth, straight, and frizz-free. Maintains a natural look while reducing volume."
             }]
     },
@@ -294,6 +297,26 @@ const ServiceList = () => {
     const ServiceList = lists.find((List) => List.name.toLowerCase() === Service.toLowerCase())
     return (
         <>
+        <Navbar collapseOnSelect expand="lg" className="nav-optn">
+                <Container>
+                    <Navbar.Brand href="#home" className='beauty'> Beauty Parlour</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className='nav-optn' />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+
+                        </Nav>
+                        <Nav className='navigate'>
+                            <Nav.Link href="" ><Link to={'/'} style={{color:'maroon'}}>Home</Link> </Nav.Link>
+                            <Nav.Link href=""  > <Link to={'/'} style={{color:'maroon'}}>Services</Link></Nav.Link>
+                            <Nav.Link href="#about" >About Us </Nav.Link>
+                            <Nav.Link href="#contact" >Contact </Nav.Link>
+                            <Nav.Link href="" onClick={() => Navigate('/blogs')}>Blogs </Nav.Link>
+                        </Nav>
+                        <img src={asset.profile} width={40} onClick={() => Navigate('/')} alt="" />
+                    </Navbar.Collapse>
+
+                </Container>
+            </Navbar>
             <div className="service-section">
                 <h2 className="service-title">{ServiceList.head}</h2>
                 <div className="service-cards-container">
