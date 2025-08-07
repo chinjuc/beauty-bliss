@@ -1,7 +1,13 @@
 import React from 'react'
 import './Blogs.css'
 import { asset } from '../assets/asset'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link, useNavigate } from 'react-router-dom';
+
 const Blogs = () => {
+    const Navigate = useNavigate();
     const blogs = [
         {
             ques: "What are the benefits of regular facials?",
@@ -56,6 +62,26 @@ const Blogs = () => {
     ]
     return (
         <div>
+             <Navbar collapseOnSelect expand="lg" className="nav-optn">
+                <Container>
+                    <Navbar.Brand href="#home" className='beauty'> Beauty Parlour</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className='nav-optn' />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+
+                        </Nav>
+                        <Nav className='navigate'>
+                            <Nav.Link href="" ><Link to={'/'} style={{color:'maroon'}}>Home</Link> </Nav.Link>
+                            <Nav.Link href="#service" ><Link to={'/'} style={{color:'maroon'}}>Services</Link> </Nav.Link>
+                            <Nav.Link href="#about" >About Us </Nav.Link>
+                            <Nav.Link href="#contact" >Contact </Nav.Link>
+                            <Nav.Link href="" onClick={() => Navigate('/blogs')}>Blogs </Nav.Link>
+                        </Nav>
+                        <img src={asset.profile} width={40} onClick={() => Navigate('/')} alt="" />
+                    </Navbar.Collapse>
+
+                </Container>
+            </Navbar>
             <div className='blogs'> 
                 {blogs.map((blog,index)=>(
                     <div key={index} className='blog-field'> 

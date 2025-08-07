@@ -60,7 +60,7 @@ const Services = () => {
                         <div key={index} className='servicediv'>
                             <Card.Body>
 
-                                <Card.Img src={service.img} className='serviceimg' />
+                               <Link to={service.link} style={{ textDecoration: 'none' }}> <Card.Img src={service.img} className='serviceimg' /></Link>
                             </Card.Body>
                             <Link to={service.link} style={{ textDecoration: 'none' }}><Card.Title className='servicetitle'>{service.title}</Card.Title>
                             </Link>

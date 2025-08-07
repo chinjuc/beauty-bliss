@@ -29,7 +29,7 @@ const Home = () => {
                                 <Nav.Link href="#service"  > Services</Nav.Link>
                                 <Nav.Link href="#about" >About Us </Nav.Link>
                                 <Nav.Link href="#contact" >Contact </Nav.Link>
-                                <Nav.Link href="" onClick={() => Navigate('/booking')}>Booking </Nav.Link>
+                                <Nav.Link href="" onClick={() => Navigate('/Blogs')}>Blogs </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
 

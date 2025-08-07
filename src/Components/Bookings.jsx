@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Bookings.css'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { asset } from '../assets/asset';
 import axios from 'axios';
 
@@ -59,11 +59,11 @@ const Bookings = () => {
 
                         </Nav>
                         <Nav className='navigate'>
-                            <Nav.Link href="" > Home</Nav.Link>
-                            <Nav.Link href="#service"  > Services</Nav.Link>
+                            <Nav.Link href="" ><Link to={'/'} style={{color:'maroon'}}>Home</Link> </Nav.Link>
+                            <Nav.Link href="#service" ><Link to={'/'} style={{color:'maroon'}}>Services</Link> </Nav.Link>
                             <Nav.Link href="#about" >About Us </Nav.Link>
                             <Nav.Link href="#contact" >Contact </Nav.Link>
-                            <Nav.Link href="" onClick={() => Navigate('/booking')}>Booking </Nav.Link>
+                            <Nav.Link href="" onClick={() => Navigate('/blogs')}>Blogs </Nav.Link>
                         </Nav>
                         <img src={asset.profile} width={40} onClick={() => Navigate('/')} alt="" />
                     </Navbar.Collapse>
