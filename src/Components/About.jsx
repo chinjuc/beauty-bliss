@@ -14,7 +14,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className='dupli'>
-                    <img src={asset.about} className='img-fluid abt-img' data-aos='slide-left' alt="" />
+                    <img src={asset.about} className='img-fluid abt-img' data-aos='zoom-in' alt="" />
                     <div className='duplii'></div>
                 </div>
 
