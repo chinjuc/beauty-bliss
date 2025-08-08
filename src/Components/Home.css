@@ -144,8 +144,8 @@ body {
     .nature-spell h1 {
         text-transform: capitalize;
         margin-top: 230px;
-        position: sticky;
-        top: 0px;
+        /* position: sticky; */
+        /* top: 0px; */
         font-size: 34px;
         color: white;
     }
