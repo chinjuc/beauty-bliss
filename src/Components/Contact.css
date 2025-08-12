@@ -104,9 +104,12 @@
   font-size: 18px;
   padding: 15px;
 }
+ .contact-title {
+    display: none;
+  }
 
 }
-@media (max-width: 480px) {
+@media (max-width:530px) {
   .icon {
     width: 40px;
     height: 40px;
@@ -114,10 +117,7 @@
     margin: 0px;
   }
 
-  .contact-title {
-    display: none;
-  }
-
+ 
   .contact-address {
     font-size: 0.9rem;
   }
