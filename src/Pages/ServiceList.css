@@ -44,14 +44,21 @@
     margin-left: -10px;
   }
   .service-card{
-    width: auto;
+    width: 300px;
     padding: 10px;
+    margin: 0px 60px;
   }
   .service-title{
     font-size: 24px;
   }
 }
-
+@media (max-width:440px){
+  .service-card{
+    width: 300px;
+    padding: 10px;
+    margin: 0px 30px;
+  }
+}
 .service-card:hover {
     cursor: pointer;
   transform: translateY(-8px);
